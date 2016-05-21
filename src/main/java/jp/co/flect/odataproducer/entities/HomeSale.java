@@ -21,9 +21,9 @@ public class HomeSale {
 
 	private String state;
 
-	private Float longitude;
+	private Double longitude;
 
-	private Float latitude;
+	private Double latitude;
 
 	private Integer price;
 
