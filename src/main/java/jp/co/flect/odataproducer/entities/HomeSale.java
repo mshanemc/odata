@@ -6,8 +6,7 @@ import javax.persistence.Table;
 import java.util.Date;
 
 import lombok.Data;
-import org.apache.olingo.odata2.api.edm.Edm;
-import org.apache.olingo.odata2.core.edm.EdmDouble;
+
 
 @Entity
 @Data
@@ -23,9 +22,9 @@ public class HomeSale {
 
 	private String state;
 
-	private EdmDouble longitude;
+	private Double longitude;
 
-	private EdmDouble latitude;
+	private Double latitude;
 
 	private Integer price;
 
