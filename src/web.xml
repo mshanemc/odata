@@ -3,7 +3,7 @@
   <display-name>odata-sample</display-name>
  
   <servlet>
-    <servlet-name>ODataServlet</servlet-name>
+    <servlet-name>DreamHouseServlet</servlet-name>
     <servlet-class>org.apache.cxf.jaxrs.servlet.CXFNonSpringJaxrsServlet</servlet-class>
  
     <init-param>
@@ -19,9 +19,32 @@
     <load-on-startup>1</load-on-startup>
   </servlet>
 
+  <servlet>
+    <servlet-name>HuzzahServlet</servlet-name>
+    <servlet-class>org.apache.cxf.jaxrs.servlet.CXFNonSpringJaxrsServlet</servlet-class>
+
+    <init-param>
+      <param-name>javax.ws.rs.Application</param-name>
+      <param-value>org.apache.olingo.odata2.core.rest.app.ODataApplication</param-value>
+    </init-param>
+
+    <init-param>
+      <param-name>org.apache.olingo.odata2.service.factory</param-name>
+      <param-value>com.herokuapp.odata.huzzah.MyODataJPAServiceFactory</param-value>
+    </init-param>
+
+    <load-on-startup>1</load-on-startup>
+  </servlet>
+
   <servlet-mapping>
-    <servlet-name>ODataServlet</servlet-name>
+    <servlet-name>DreamHouseServlet</servlet-name>
     <url-pattern>/dreamhouse/*</url-pattern>
   </servlet-mapping>
+
+  <servlet-mapping>
+    <servlet-name>HuzzahServlet</servlet-name>
+    <url-pattern>/huzzah/*</url-pattern>
+  </servlet-mapping>
+
 
 </web-app>
