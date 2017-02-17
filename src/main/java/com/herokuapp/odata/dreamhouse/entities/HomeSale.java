@@ -1,4 +1,4 @@
-package jp.co.flect.odataproducer.entities;
+package com.herokuapp.odata.dreamhouse.entities;
 
 import javax.persistence.Entity;
 import javax.persistence.Id;

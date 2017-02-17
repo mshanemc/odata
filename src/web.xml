@@ -13,7 +13,7 @@
  
     <init-param>
       <param-name>org.apache.olingo.odata2.service.factory</param-name>
-      <param-value>jp.co.flect.odataproducer.MyODataJPAServiceFactory</param-value>
+      <param-value>com.herokuapp.odata.dreamhouse.MyODataJPAServiceFactory</param-value>
     </init-param>
  
     <load-on-startup>1</load-on-startup>
@@ -21,7 +21,7 @@
 
   <servlet-mapping>
     <servlet-name>ODataServlet</servlet-name>
-    <url-pattern>/odata/*</url-pattern>
+    <url-pattern>/dreamhouse/*</url-pattern>
   </servlet-mapping>
 
 </web-app>

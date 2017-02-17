@@ -1,7 +1,8 @@
-package jp.co.flect.odataproducer;
+package com.herokuapp.odata.huzzah;
 
-import org.apache.olingo.odata2.jpa.processor.api.ODataJPAServiceFactory;
+import com.herokuapp.odata.dreamhouse.HerokuEntityManagerFactory;
 import org.apache.olingo.odata2.jpa.processor.api.ODataJPAContext;
+import org.apache.olingo.odata2.jpa.processor.api.ODataJPAServiceFactory;
 import org.apache.olingo.odata2.jpa.processor.api.exception.ODataJPARuntimeException;
 
 public class MyODataJPAServiceFactory extends ODataJPAServiceFactory {

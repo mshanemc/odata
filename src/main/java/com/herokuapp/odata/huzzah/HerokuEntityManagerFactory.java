@@ -1,11 +1,11 @@
-package jp.co.flect.odataproducer;
+package com.herokuapp.odata.huzzah;
 
-import javax.persistence.Persistence;
 import javax.persistence.EntityManagerFactory;
+import javax.persistence.Persistence;
 import java.net.URI;
 import java.net.URISyntaxException;
-import java.util.Map;
 import java.util.HashMap;
+import java.util.Map;
 
 public class HerokuEntityManagerFactory {
 
