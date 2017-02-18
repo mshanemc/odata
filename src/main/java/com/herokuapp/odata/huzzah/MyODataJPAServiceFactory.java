@@ -1,6 +1,6 @@
 package com.herokuapp.odata.huzzah;
 
-import com.herokuapp.odata.dreamhouse.HerokuEntityManagerFactory;
+import com.herokuapp.odata.huzzah.HerokuEntityManagerFactory;
 import org.apache.olingo.odata2.jpa.processor.api.ODataJPAContext;
 import org.apache.olingo.odata2.jpa.processor.api.ODataJPAServiceFactory;
 import org.apache.olingo.odata2.jpa.processor.api.exception.ODataJPARuntimeException;

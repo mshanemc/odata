@@ -1,23 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" id="WebApp_ID" version="3.0">
   <display-name>odata-sample</display-name>
- 
-  <servlet>
-    <servlet-name>DreamHouseServlet</servlet-name>
-    <servlet-class>org.apache.cxf.jaxrs.servlet.CXFNonSpringJaxrsServlet</servlet-class>
- 
-    <init-param>
-      <param-name>javax.ws.rs.Application</param-name>
-      <param-value>org.apache.olingo.odata2.core.rest.app.ODataApplication</param-value>
-    </init-param>
- 
-    <init-param>
-      <param-name>org.apache.olingo.odata2.service.factory</param-name>
-      <param-value>com.herokuapp.odata.dreamhouse.MyODataJPAServiceFactory</param-value>
-    </init-param>
- 
-    <load-on-startup>2</load-on-startup>
-  </servlet>
 
   <servlet>
     <servlet-name>HuzzahServlet</servlet-name>
@@ -36,15 +19,31 @@
     <load-on-startup>1</load-on-startup>
   </servlet>
 
-  <servlet-mapping>
+  <servlet>
     <servlet-name>DreamHouseServlet</servlet-name>
-    <url-pattern>/dreamhouse/*</url-pattern>
-  </servlet-mapping>
+    <servlet-class>org.apache.cxf.jaxrs.servlet.CXFNonSpringJaxrsServlet</servlet-class>
+ 
+    <init-param>
+      <param-name>javax.ws.rs.Application</param-name>
+      <param-value>org.apache.olingo.odata2.core.rest.app.ODataApplication</param-value>
+    </init-param>
+ 
+    <init-param>
+      <param-name>org.apache.olingo.odata2.service.factory</param-name>
+      <param-value>com.herokuapp.odata.dreamhouse.MyODataJPAServiceFactory</param-value>
+    </init-param>
+ 
+    <load-on-startup>2</load-on-startup>
+  </servlet>
 
   <servlet-mapping>
     <servlet-name>HuzzahServlet</servlet-name>
     <url-pattern>/huzzah/*</url-pattern>
   </servlet-mapping>
 
+  <servlet-mapping>
+    <servlet-name>DreamHouseServlet</servlet-name>
+    <url-pattern>/dreamhouse/*</url-pattern>
+  </servlet-mapping>
 
 </web-app>
