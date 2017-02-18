@@ -9,7 +9,7 @@ import java.util.HashMap;
 
 public class HerokuEntityManagerFactory {
 
-	public static final String PUNIT_NAME = "defaultPersistenceUnit";
+	public static final String PUNIT_NAME = "dreamhousePersistenceUnit";
 	private static final EntityManagerFactory INSTANCE;
 
 	static {
