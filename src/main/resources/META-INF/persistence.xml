@@ -31,4 +31,16 @@
 		</properties>
 	</persistence-unit>
 
+
+	<persistence-unit name="ibmPersistenceUnit" transaction-type="RESOURCE_LOCAL">
+		<provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
+		<class>com.herokuapp.odata.ibm.entities.Shipment</class>
+		<exclude-unlisted-classes>true</exclude-unlisted-classes>
+		<properties>
+			<property name="hibernate.dialect" value="org.hibernate.dialect.PostgreSQL82Dialect"/>
+			<property name="hibernate.show_sql" value="true"/>
+			<property name="hibernate.default_schema" value="ibm"/>
+		</properties>
+	</persistence-unit>
+
 </persistence>
