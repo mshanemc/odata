@@ -14,7 +14,7 @@ public class Score {
 	@Id
 	private Integer id;
 
-	private String candidate;
+	private Integer candidate;
 
 	private String attribute;
 
