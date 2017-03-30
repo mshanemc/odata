@@ -48,6 +48,7 @@
 		<class>com.herokuapp.odata.workday.entities.Benefit</class>
 		<class>com.herokuapp.odata.workday.entities.Job</class>
 		<class>com.herokuapp.odata.workday.entities.PaymentElection</class>
+		<class>com.herokuapp.odata.workday.entities.Score</class>
 		<class>com.herokuapp.odata.workday.entities.TimeOff</class>
 		<class>com.herokuapp.odata.workday.entities.TimeOffBalance</class>
 		<class>com.herokuapp.odata.workday.entities.TimeSheet</class>
