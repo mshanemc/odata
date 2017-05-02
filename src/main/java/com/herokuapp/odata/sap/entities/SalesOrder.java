@@ -15,7 +15,7 @@ public class SalesOrder {
 	@Id
 	private Integer orderid;
 
-	private Integer businesspartnerid;
+	private String businesspartnerid;
 
 	private String companyname;
 
