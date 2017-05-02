@@ -17,7 +17,7 @@ public class SalesOrder {
 
 	private Integer partnerid;
 
-	private String customername;
+	private String companyname;
 
 	private String status;
 
