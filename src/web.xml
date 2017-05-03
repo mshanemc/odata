@@ -74,7 +74,7 @@
 
   <servlet>
     <servlet-name>IndexServlet</servlet-name>
-    <servlet-class></servlet-class>
+    <servlet-class>com.herokuapp.odata.Index</servlet-class>
     <load-on-startup>10</load-on-startup>
   </servlet>
 
