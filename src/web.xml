@@ -5,88 +5,78 @@
   <servlet>
     <servlet-name>HuzzahServlet</servlet-name>
     <servlet-class>org.apache.cxf.jaxrs.servlet.CXFNonSpringJaxrsServlet</servlet-class>
-
     <init-param>
       <param-name>javax.ws.rs.Application</param-name>
       <param-value>org.apache.olingo.odata2.core.rest.app.ODataApplication</param-value>
     </init-param>
-
     <init-param>
       <param-name>org.apache.olingo.odata2.service.factory</param-name>
       <param-value>com.herokuapp.odata.huzzah.MyODataJPAServiceFactory</param-value>
     </init-param>
-
     <load-on-startup>1</load-on-startup>
   </servlet>
 
   <servlet>
     <servlet-name>DreamHouseServlet</servlet-name>
     <servlet-class>org.apache.cxf.jaxrs.servlet.CXFNonSpringJaxrsServlet</servlet-class>
- 
-    <init-param>
+     <init-param>
       <param-name>javax.ws.rs.Application</param-name>
       <param-value>org.apache.olingo.odata2.core.rest.app.ODataApplication</param-value>
     </init-param>
- 
-    <init-param>
+     <init-param>
       <param-name>org.apache.olingo.odata2.service.factory</param-name>
       <param-value>com.herokuapp.odata.dreamhouse.MyODataJPAServiceFactory</param-value>
     </init-param>
- 
-    <load-on-startup>2</load-on-startup>
+     <load-on-startup>2</load-on-startup>
   </servlet>
 
   <servlet>
     <servlet-name>IBMServlet</servlet-name>
     <servlet-class>org.apache.cxf.jaxrs.servlet.CXFNonSpringJaxrsServlet</servlet-class>
-
     <init-param>
       <param-name>javax.ws.rs.Application</param-name>
       <param-value>org.apache.olingo.odata2.core.rest.app.ODataApplication</param-value>
     </init-param>
-
     <init-param>
       <param-name>org.apache.olingo.odata2.service.factory</param-name>
       <param-value>com.herokuapp.odata.ibm.MyODataJPAServiceFactory</param-value>
     </init-param>
-
     <load-on-startup>2</load-on-startup>
   </servlet>
 
   <servlet>
     <servlet-name>SAPServlet</servlet-name>
     <servlet-class>org.apache.cxf.jaxrs.servlet.CXFNonSpringJaxrsServlet</servlet-class>
-
     <init-param>
       <param-name>javax.ws.rs.Application</param-name>
       <param-value>org.apache.olingo.odata2.core.rest.app.ODataApplication</param-value>
     </init-param>
-
     <init-param>
       <param-name>org.apache.olingo.odata2.service.factory</param-name>
       <param-value>com.herokuapp.odata.sap.MyODataJPAServiceFactory</param-value>
     </init-param>
-
     <load-on-startup>2</load-on-startup>
   </servlet>
 
   <servlet>
     <servlet-name>WorkdayServlet</servlet-name>
     <servlet-class>org.apache.cxf.jaxrs.servlet.CXFNonSpringJaxrsServlet</servlet-class>
-
     <init-param>
       <param-name>javax.ws.rs.Application</param-name>
       <param-value>org.apache.olingo.odata2.core.rest.app.ODataApplication</param-value>
     </init-param>
-
     <init-param>
       <param-name>org.apache.olingo.odata2.service.factory</param-name>
       <param-value>com.herokuapp.odata.workday.MyODataJPAServiceFactory</param-value>
     </init-param>
-
     <load-on-startup>2</load-on-startup>
   </servlet>
 
+  <servlet>
+    <servlet-name>IndexServlet</servlet-name>
+    <servlet-class></servlet-class>
+    <load-on-startup>10</load-on-startup>
+  </servlet>
 
   <servlet-mapping>
     <servlet-name>HuzzahServlet</servlet-name>
@@ -111,6 +101,11 @@
   <servlet-mapping>
     <servlet-name>WorkdayServlet</servlet-name>
     <url-pattern>/workday/*</url-pattern>
+  </servlet-mapping>
+
+  <servlet-mapping>
+    <servlet-name>IndexServlet</servlet-name>
+    <url-pattern>/index</url-pattern>
   </servlet-mapping>
 
 </web-app>
