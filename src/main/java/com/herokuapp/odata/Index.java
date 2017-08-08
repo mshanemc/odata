@@ -25,6 +25,7 @@ public final class Index extends HttpServlet {
         writer.println("<li><a href='/ibm'>IBM</a></li>");
         writer.println("<li><a href='/sap'>SAP</a></li>");
         writer.println("<li><a href='/workday'>Workday</a></li>");
+        writer.println("<li><a href='/hero'>Hero</a></li>");
         writer.println("</ul>");
         writer.println("</body>");
         writer.println("</html>");
