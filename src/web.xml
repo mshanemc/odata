@@ -113,6 +113,11 @@
   </servlet-mapping>
 
   <servlet-mapping>
+    <servlet-name>HeroServlet</servlet-name>
+    <url-pattern>/hero/*</url-pattern>
+  </servlet-mapping>
+
+  <servlet-mapping>
     <servlet-name>WorkdayServlet</servlet-name>
     <url-pattern>/workday/*</url-pattern>
   </servlet-mapping>
