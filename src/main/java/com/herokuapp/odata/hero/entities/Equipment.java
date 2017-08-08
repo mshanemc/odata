@@ -14,14 +14,14 @@ public class Equipment {
 	@Id
 	private Integer id;
 
-	private String Name;
+	private String name;
 
-	private Integer AvailableQuantity;
+	private Integer available_quantity;
 
-	private String Description;
+	private String description;
 
-	private String Type;
+	private String type;
 
-	private String Image;
+	private String image;
 
 }
