@@ -56,7 +56,9 @@
 	<persistence-unit name="heroPersistenceUnit" transaction-type="RESOURCE_LOCAL">
 		<provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
 		<class>com.herokuapp.odata.hero.entities.Equipment</class>
-		<class>com.herokuapp.odata.workday.entities.Job</class>
+		<class>com.herokuapp.odata.hero.entities.Job</class>
+		<class>com.herokuapp.odata.hero.entities.Score</class>
+
 		<exclude-unlisted-classes>true</exclude-unlisted-classes>
 		<properties>
 			<property name="hibernate.dialect" value="org.hibernate.dialect.PostgreSQL82Dialect"/>
