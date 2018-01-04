@@ -1,4 +1,4 @@
-package com.herokuapp.odata.workday.entities;
+package com.herokuapp.odata.hero.entities;
 
 import javax.persistence.Entity;
 import javax.persistence.Id;
