@@ -14,4 +14,5 @@
 
 # ok, and you really want data right?
 1. create the table and populate it using heroku pg:psql or the Adminium plugin
-2. if you used a schema, make sure your entry in resources/META-INF-persistence.xml matches the schema, or is `public` for the default
+2. Under no circumstances should any table column have a capital letter anywhere.
+3. if you used a schema, make sure your entry in resources/META-INF-persistence.xml matches the schema, or is `public` for the default
