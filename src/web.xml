@@ -132,7 +132,7 @@
   </servlet-mapping>
 
   <servlet-mapping>
-    <servlet-name>GroveryServlet</servlet-name>
+    <servlet-name>GroceryServlet</servlet-name>
     <url-pattern>/grocery/*</url-pattern>
   </servlet-mapping>
 
