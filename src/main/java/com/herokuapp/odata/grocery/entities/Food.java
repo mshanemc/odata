@@ -9,8 +9,8 @@ import java.math.BigDecimal;
 
 @Entity
 @Data
-@Table(name="groceries")
-public class Grocery {
+@Table(name="foods")
+public class Food {
 
 	@Id
 	private Integer id;
