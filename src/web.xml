@@ -132,6 +132,11 @@
   </servlet-mapping>
 
   <servlet-mapping>
+    <servlet-name>GroveryServlet</servlet-name>
+    <url-pattern>/grocery/*</url-pattern>
+  </servlet-mapping>
+
+  <servlet-mapping>
     <servlet-name>WorkdayServlet</servlet-name>
     <url-pattern>/workday/*</url-pattern>
   </servlet-mapping>
