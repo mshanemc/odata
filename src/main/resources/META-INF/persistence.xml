@@ -57,7 +57,7 @@
 	<persistence-unit name="sapPersistenceUnit" transaction-type="RESOURCE_LOCAL">
 		<provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
 		<class>com.herokuapp.odata.sap.entities.SalesOrder</class>
-		<class>com.herokuapp.odata.sap.entities.Inventory</class>
+		<class>com.herokuapp.odata.sap.entities.Part</class>
 		<exclude-unlisted-classes>true</exclude-unlisted-classes>
 		<properties>
 			<property name="hibernate.dialect" value="org.hibernate.dialect.PostgreSQL82Dialect"/>
