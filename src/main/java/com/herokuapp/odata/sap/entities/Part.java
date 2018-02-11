@@ -9,16 +9,20 @@ import java.math.BigDecimal;
 
 @Entity
 @Data
-@Table(name="inventory")
-public class Inventory {
+@Table(name="parts")
+public class Part {
 
 	@Id
-	private Integer id;
+	private Integer partid;
 
 	private String serialnumber;
 
 	private String partnumber;
 
 	private String description;
+
+	private String category;
+
+	private String vehicleid;
 
 }
