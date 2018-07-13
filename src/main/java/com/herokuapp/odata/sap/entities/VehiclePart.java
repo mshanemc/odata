@@ -23,4 +23,6 @@ public class VehiclePart {
 
 	private String vehicleid;
 
+    private Boolean installed;
+
 }
