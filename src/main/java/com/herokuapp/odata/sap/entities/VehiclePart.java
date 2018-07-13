@@ -10,7 +10,7 @@ import java.math.BigDecimal;
 @Entity
 @Data
 @Table(name="vehicleparts")
-public class Part {
+public class VehiclePart {
 
 	@Id
 	private Integer vehiclepartid;
