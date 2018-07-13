@@ -1,102 +1,101 @@
-<persistence xmlns="http://java.sun.com/xml/ns/persistence"
-			 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-			 xsi:schemaLocation="http://java.sun.com/xml/ns/persistence http://java.sun.com/xml/ns/persistence/persistence_2_0.xsd"
-			 version="2.0">
+<persistence xmlns="http://java.sun.com/xml/ns/persistence" 
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/persistence http://java.sun.com/xml/ns/persistence/persistence_2_0.xsd" version="2.0">
 
-	<persistence-unit name="dreamhousePersistenceUnit" transaction-type="RESOURCE_LOCAL">
-		<provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
-		<class>com.herokuapp.odata.dreamhouse.entities.HomeSale</class>
-		<exclude-unlisted-classes>true</exclude-unlisted-classes>
-		<properties>
-			<property name="hibernate.dialect" value="org.hibernate.dialect.PostgreSQL82Dialect"/>
-			<property name="hibernate.show_sql" value="true"/>
-			<property name="hibernate.default_schema" value="public"/>
-		</properties>
-	</persistence-unit>
+    <persistence-unit name="dreamhousePersistenceUnit" transaction-type="RESOURCE_LOCAL">
+        <provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
+        <class>com.herokuapp.odata.dreamhouse.entities.HomeSale</class>
+        <exclude-unlisted-classes>true</exclude-unlisted-classes>
+        <properties>
+            <property name="hibernate.dialect" value="org.hibernate.dialect.PostgreSQL82Dialect"/>
+            <property name="hibernate.show_sql" value="true"/>
+            <property name="hibernate.default_schema" value="public"/>
+        </properties>
+    </persistence-unit>
 
-	<persistence-unit name="groceryPersistenceUnit" transaction-type="RESOURCE_LOCAL">
-		<provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
-		<class>com.herokuapp.odata.grocery.entities.Food</class>
+    <persistence-unit name="groceryPersistenceUnit" transaction-type="RESOURCE_LOCAL">
+        <provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
+        <class>com.herokuapp.odata.grocery.entities.Food</class>
 
-		<exclude-unlisted-classes>true</exclude-unlisted-classes>
-		<properties>
-			<property name="hibernate.dialect" value="org.hibernate.dialect.PostgreSQL82Dialect"/>
-			<property name="hibernate.show_sql" value="true"/>
-			<property name="hibernate.default_schema" value="public"/>
-		</properties>
-	</persistence-unit>
+        <exclude-unlisted-classes>true</exclude-unlisted-classes>
+        <properties>
+            <property name="hibernate.dialect" value="org.hibernate.dialect.PostgreSQL82Dialect"/>
+            <property name="hibernate.show_sql" value="true"/>
+            <property name="hibernate.default_schema" value="public"/>
+        </properties>
+    </persistence-unit>
 
-	<persistence-unit name="huzzahPersistenceUnit" transaction-type="RESOURCE_LOCAL">
-		<provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
-		<class>com.herokuapp.odata.huzzah.entities.Beneficiarie</class>
-		<class>com.herokuapp.odata.huzzah.entities.Benefit</class>
-		<class>com.herokuapp.odata.huzzah.entities.Job</class>
-		<class>com.herokuapp.odata.huzzah.entities.PaymentElection</class>
-		<class>com.herokuapp.odata.huzzah.entities.TimeOff</class>
-		<class>com.herokuapp.odata.huzzah.entities.TimeOffBalance</class>
-		<class>com.herokuapp.odata.huzzah.entities.TimeSheet</class>
-		<exclude-unlisted-classes>true</exclude-unlisted-classes>
-		<properties>
-			<property name="hibernate.dialect" value="org.hibernate.dialect.PostgreSQL82Dialect"/>
-			<property name="hibernate.show_sql" value="true"/>
-			<property name="hibernate.default_schema" value="huzzah"/>
-		</properties>
-	</persistence-unit>
+    <persistence-unit name="huzzahPersistenceUnit" transaction-type="RESOURCE_LOCAL">
+        <provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
+        <class>com.herokuapp.odata.huzzah.entities.Beneficiarie</class>
+        <class>com.herokuapp.odata.huzzah.entities.Benefit</class>
+        <class>com.herokuapp.odata.huzzah.entities.Job</class>
+        <class>com.herokuapp.odata.huzzah.entities.PaymentElection</class>
+        <class>com.herokuapp.odata.huzzah.entities.TimeOff</class>
+        <class>com.herokuapp.odata.huzzah.entities.TimeOffBalance</class>
+        <class>com.herokuapp.odata.huzzah.entities.TimeSheet</class>
+        <exclude-unlisted-classes>true</exclude-unlisted-classes>
+        <properties>
+            <property name="hibernate.dialect" value="org.hibernate.dialect.PostgreSQL82Dialect"/>
+            <property name="hibernate.show_sql" value="true"/>
+            <property name="hibernate.default_schema" value="huzzah"/>
+        </properties>
+    </persistence-unit>
 
-	<persistence-unit name="ibmPersistenceUnit" transaction-type="RESOURCE_LOCAL">
-		<provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
-		<class>com.herokuapp.odata.ibm.entities.Shipment</class>
-		<exclude-unlisted-classes>true</exclude-unlisted-classes>
-		<properties>
-			<property name="hibernate.dialect" value="org.hibernate.dialect.PostgreSQL82Dialect"/>
-			<property name="hibernate.show_sql" value="true"/>
-			<property name="hibernate.default_schema" value="ibm"/>
-		</properties>
-	</persistence-unit>
+    <persistence-unit name="ibmPersistenceUnit" transaction-type="RESOURCE_LOCAL">
+        <provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
+        <class>com.herokuapp.odata.ibm.entities.Shipment</class>
+        <exclude-unlisted-classes>true</exclude-unlisted-classes>
+        <properties>
+            <property name="hibernate.dialect" value="org.hibernate.dialect.PostgreSQL82Dialect"/>
+            <property name="hibernate.show_sql" value="true"/>
+            <property name="hibernate.default_schema" value="ibm"/>
+        </properties>
+    </persistence-unit>
 
-	<persistence-unit name="sapPersistenceUnit" transaction-type="RESOURCE_LOCAL">
-		<provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
-		<class>com.herokuapp.odata.sap.entities.SalesOrder</class>
-		<class>com.herokuapp.odata.sap.entities.Part</class>
-		<exclude-unlisted-classes>true</exclude-unlisted-classes>
-		<properties>
-			<property name="hibernate.dialect" value="org.hibernate.dialect.PostgreSQL82Dialect"/>
-			<property name="hibernate.show_sql" value="true"/>
-			<property name="hibernate.default_schema" value="sap"/>
-		</properties>
-	</persistence-unit>
+    <persistence-unit name="sapPersistenceUnit" transaction-type="RESOURCE_LOCAL">
+        <provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
+        <class>com.herokuapp.odata.sap.entities.SalesOrder</class>
+        <class>com.herokuapp.odata.sap.entities.Part</class>
+        <class>com.herokuapp.odata.sap.entities.VehiclePart</class>
+        <exclude-unlisted-classes>true</exclude-unlisted-classes>
+        <properties>
+            <property name="hibernate.dialect" value="org.hibernate.dialect.PostgreSQL82Dialect"/>
+            <property name="hibernate.show_sql" value="true"/>
+            <property name="hibernate.default_schema" value="sap"/>
+        </properties>
+    </persistence-unit>
 
-	<persistence-unit name="heroPersistenceUnit" transaction-type="RESOURCE_LOCAL">
-		<provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
-		<class>com.herokuapp.odata.hero.entities.Equipment</class>
-		<class>com.herokuapp.odata.hero.entities.Job</class>
-		<class>com.herokuapp.odata.hero.entities.Score</class>
+    <persistence-unit name="heroPersistenceUnit" transaction-type="RESOURCE_LOCAL">
+        <provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
+        <class>com.herokuapp.odata.hero.entities.Equipment</class>
+        <class>com.herokuapp.odata.hero.entities.Job</class>
+        <class>com.herokuapp.odata.hero.entities.Score</class>
 
-		<exclude-unlisted-classes>true</exclude-unlisted-classes>
-		<properties>
-			<property name="hibernate.dialect" value="org.hibernate.dialect.PostgreSQL82Dialect"/>
-			<property name="hibernate.show_sql" value="true"/>
-			<property name="hibernate.default_schema" value="hero"/>
-		</properties>
-	</persistence-unit>
+        <exclude-unlisted-classes>true</exclude-unlisted-classes>
+        <properties>
+            <property name="hibernate.dialect" value="org.hibernate.dialect.PostgreSQL82Dialect"/>
+            <property name="hibernate.show_sql" value="true"/>
+            <property name="hibernate.default_schema" value="hero"/>
+        </properties>
+    </persistence-unit>
 
 
-	<persistence-unit name="workdayPersistenceUnit" transaction-type="RESOURCE_LOCAL">
-		<provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
-		<class>com.herokuapp.odata.workday.entities.Beneficiarie</class>
-		<class>com.herokuapp.odata.workday.entities.Benefit</class>
-		<class>com.herokuapp.odata.workday.entities.Job</class>
-		<class>com.herokuapp.odata.workday.entities.PaymentElection</class>
-		<class>com.herokuapp.odata.workday.entities.Score</class>
-		<class>com.herokuapp.odata.workday.entities.TimeOff</class>
-		<class>com.herokuapp.odata.workday.entities.TimeOffBalance</class>
-		<class>com.herokuapp.odata.workday.entities.TimeSheet</class>
-		<exclude-unlisted-classes>true</exclude-unlisted-classes>
-		<properties>
-			<property name="hibernate.dialect" value="org.hibernate.dialect.PostgreSQL82Dialect"/>
-			<property name="hibernate.show_sql" value="true"/>
-			<property name="hibernate.default_schema" value="workday"/>
-		</properties>
-	</persistence-unit>
+    <persistence-unit name="workdayPersistenceUnit" transaction-type="RESOURCE_LOCAL">
+        <provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
+        <class>com.herokuapp.odata.workday.entities.Beneficiarie</class>
+        <class>com.herokuapp.odata.workday.entities.Benefit</class>
+        <class>com.herokuapp.odata.workday.entities.Job</class>
+        <class>com.herokuapp.odata.workday.entities.PaymentElection</class>
+        <class>com.herokuapp.odata.workday.entities.Score</class>
+        <class>com.herokuapp.odata.workday.entities.TimeOff</class>
+        <class>com.herokuapp.odata.workday.entities.TimeOffBalance</class>
+        <class>com.herokuapp.odata.workday.entities.TimeSheet</class>
+        <exclude-unlisted-classes>true</exclude-unlisted-classes>
+        <properties>
+            <property name="hibernate.dialect" value="org.hibernate.dialect.PostgreSQL82Dialect"/>
+            <property name="hibernate.show_sql" value="true"/>
+            <property name="hibernate.default_schema" value="workday"/>
+        </properties>
+    </persistence-unit>
 
 </persistence>

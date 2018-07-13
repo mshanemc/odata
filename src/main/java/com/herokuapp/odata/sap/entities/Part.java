@@ -15,14 +15,12 @@ public class Part {
 	@Id
 	private Integer partid;
 
-	private String serialnumber;
-
 	private String partnumber;
 
 	private String description;
 
 	private String category;
 
-	private String vehicleid;
+    private String supplier;
 
 }
