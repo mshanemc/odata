@@ -12,9 +12,7 @@ import java.math.BigDecimal;
 @Table(name="parts")
 public class Part {
 
-	@Id
-	private Integer partid;
-
+    @Id
 	private String partnumber;
 
 	private String description;

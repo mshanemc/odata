@@ -12,9 +12,7 @@ import java.math.BigDecimal;
 @Table(name="vehicleparts")
 public class VehiclePart {
 
-	@Id
-	private Integer vehiclepartid;
-
+    @Id
 	private String serialnumber;
 
 	private String partnumber;
