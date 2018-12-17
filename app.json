@@ -1,0 +1,25 @@
+{
+  "name": "odata",
+  "scripts": {
+  },
+  "env": {
+    "ADMINIUM_URL": {
+      "required": true
+    }
+  },
+  "formation": {
+    "web": {
+      "quantity": 1
+    }
+  },
+  "addons": [
+    "adminium",
+    "heroku-postgresql"
+  ],
+  "stack": "cedar-14",
+  "buildpacks": [
+    {
+      "url": "heroku/java"
+    }
+  ]
+}
