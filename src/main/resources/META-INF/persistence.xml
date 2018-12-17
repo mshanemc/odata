@@ -26,7 +26,7 @@
 
     <persistence-unit name="merchandisePersistenceUnit" transaction-type="RESOURCE_LOCAL">
         <provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
-        <class>com.herokuapp.odata.merchandise.entities.Merchandise</class>
+        <class>com.herokuapp.odata.merchandise.entities.Item</class>
 
         <exclude-unlisted-classes>true</exclude-unlisted-classes>
         <properties>
