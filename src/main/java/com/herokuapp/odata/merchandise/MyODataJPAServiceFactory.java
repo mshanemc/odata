@@ -1,4 +1,4 @@
-package com.herokuapp.odata.grocery;
+package com.herokuapp.odata.merchandise;
 
 import org.apache.olingo.odata2.jpa.processor.api.ODataJPAContext;
 import org.apache.olingo.odata2.jpa.processor.api.ODataJPAServiceFactory;
@@ -10,7 +10,7 @@ public class MyODataJPAServiceFactory extends ODataJPAServiceFactory {
 	public ODataJPAContext initializeODataJPAContext() throws ODataJPARuntimeException {
 		ODataJPAContext context = getODataJPAContext();
 		context.setEntityManagerFactory(HerokuEntityManagerFactory.getInstance());
-		context.setPersistenceUnitName("groceryPersistenceUnit");
+		context.setPersistenceUnitName("merchandisePersistenceUnit");
 		return context;
 	}
 

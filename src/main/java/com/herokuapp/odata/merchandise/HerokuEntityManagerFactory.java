@@ -1,4 +1,4 @@
-package com.herokuapp.odata.grocery;
+package com.herokuapp.odata.merchandise;
 
 import javax.persistence.EntityManagerFactory;
 import javax.persistence.Persistence;
@@ -9,7 +9,7 @@ import java.util.Map;
 
 public class HerokuEntityManagerFactory {
 
-	public static final String PUNIT_NAME = "groceryPersistenceUnit";
+	public static final String PUNIT_NAME = "merchandisePersistenceUnit";
 	private static final EntityManagerFactory INSTANCE;
 
 	static {
