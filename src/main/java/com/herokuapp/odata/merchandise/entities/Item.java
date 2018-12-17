@@ -15,7 +15,7 @@ public class Item {
 	@Id
 	private Integer id;
 
-	private Integer SKU;
+	private String SKU;
 
 	private String Name;
 
