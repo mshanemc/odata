@@ -32,7 +32,7 @@ public class HerokuEntityManagerFactory {
 				password = username.substring(idx + 1);
 				username = username.substring(0, idx);
 			}
-			String jdbcUrl = "jdbc:postgresql://" + host + db;
+			String jdbcUrl = "jdbc://" + host + db;
 			Map<String, String> properties = new HashMap<>();
 			properties.put("javax.persistence.jdbc.url", jdbcUrl);
 			if (username != null) {
