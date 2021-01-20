@@ -72,7 +72,6 @@
         <properties>
             <property name="hibernate.dialect" value="org.hibernate.dialect.PostgreSQLDialect"/>
             <property name="hibernate.show_sql" value="true"/>
-            <property name="hibernate.default_schema" value="sap"/>
         </properties>
     </persistence-unit>
 
@@ -83,7 +82,7 @@
         <class>com.herokuapp.odata.hero.entities.Score</class>
         <exclude-unlisted-classes>true</exclude-unlisted-classes>
         <properties>
-            <property name="hibernate.dialect" value="org.hibernate.dialect.PostgreSQL82Dialect"/>
+            <property name="hibernate.dialect" value="org.hibernate.dialect.PostgreSQLDialect"/>
             <property name="hibernate.show_sql" value="true"/>
             <property name="hibernate.default_schema" value="hero"/>
         </properties>
@@ -102,7 +101,7 @@
         <class>com.herokuapp.odata.workday.entities.TimeSheet</class>
         <exclude-unlisted-classes>true</exclude-unlisted-classes>
         <properties>
-            <property name="hibernate.dialect" value="org.hibernate.dialect.PostgreSQL82Dialect"/>
+            <property name="hibernate.dialect" value="org.hibernate.dialect.PostgreSQLDialect"/>
             <property name="hibernate.show_sql" value="true"/>
             <property name="hibernate.default_schema" value="workday"/>
         </properties>
