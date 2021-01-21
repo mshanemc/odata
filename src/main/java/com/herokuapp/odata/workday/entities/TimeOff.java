@@ -9,7 +9,7 @@ import lombok.Data;
 
 @Entity
 @Data
-@Table(name="time_off")
+@Table(name="workday.time_off")
 public class TimeOff {
 
 	@Id

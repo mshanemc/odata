@@ -9,7 +9,7 @@ import lombok.Data;
 
 @Entity
 @Data
-@Table(name="payment_elections")
+@Table(name="workday.payment_elections")
 public class PaymentElection {
 
 	@Id

@@ -9,7 +9,7 @@ import java.util.Date;
 
 @Entity
 @Data
-@Table(name="shipments")
+@Table(name="ibmshipments")
 public class Shipment {
 
 	@Id

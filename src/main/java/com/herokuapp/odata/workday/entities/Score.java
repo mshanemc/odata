@@ -8,7 +8,7 @@ import javax.persistence.Table;
 
 @Entity
 @Data
-@Table(name="scores")
+@Table(name="workday.scores")
 public class Score {
 
 	@Id

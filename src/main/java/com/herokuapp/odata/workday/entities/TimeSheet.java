@@ -9,7 +9,7 @@ import lombok.Data;
 
 @Entity
 @Data
-@Table(name="time_sheets")
+@Table(name="workday.time_sheets")
 public class TimeSheet {
 
 	@Id

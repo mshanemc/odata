@@ -9,7 +9,7 @@ import lombok.Data;
 
 @Entity
 @Data
-@Table(name="time_off_balance")
+@Table(name="huzzah.time_off_balance")
 public class TimeOffBalance {
 
 	@Id
