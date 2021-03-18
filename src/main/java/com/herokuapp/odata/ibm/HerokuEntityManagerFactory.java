@@ -2,8 +2,6 @@ package com.herokuapp.odata.ibm;
 
 import javax.persistence.EntityManagerFactory;
 import javax.persistence.Persistence;
-import java.net.URI;
-import java.net.URISyntaxException;
 import java.util.HashMap;
 import java.util.Map;
 

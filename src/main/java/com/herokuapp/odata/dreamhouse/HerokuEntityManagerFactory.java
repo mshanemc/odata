@@ -2,8 +2,6 @@ package com.herokuapp.odata.dreamhouse;
 
 import javax.persistence.Persistence;
 import javax.persistence.EntityManagerFactory;
-import java.net.URI;
-import java.net.URISyntaxException;
 import java.util.Map;
 import java.util.HashMap;
 
